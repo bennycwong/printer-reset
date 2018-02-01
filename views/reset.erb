@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8' />
+    <title>Printer Reset</title>
+    <link rel="stylesheet" type="text/css" href="./tachyons.min.css"/>
+  </head>
+  <body class='container sans-serif'>
+    
+    <% if flash %>
+      <div class="flex items-center justify-center pa4 bg-lightest-blue navy">
+        <svg class="w1" data-icon="info" viewBox="0 0 32 32" style="fill:currentcolor">
+          <title>info icon</title>
+          <path d="M16 0 A16 16 0 0 1 16 32 A16 16 0 0 1 16 0 M19 15 L13 15 L13 26 L19 26 z M16 6 A3 3 0 0 0 16 12 A3 3 0 0 0 16 6"></path>
+        </svg>
+        <span class="lh-title ml3"><%= flash %></span>
+      </div>
+    <% end %>
+    <div class="flex items-center justify-center pa4">
+      <a href="/" class="f5 no-underline black bg-animate hover-bg-black hover-white inline-flex items-center pa3 ba border-box">
+          <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor">
+            <title>chevronLeft icon</title>
+            <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"></path>
+          </svg>
+        <span class="pl1">Back</span>
+      </a>
+    </div>  
+  </body>
+</html>

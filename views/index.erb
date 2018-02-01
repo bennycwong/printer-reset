@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8' />
+    <title>Printer Reset</title>
+    <link rel="stylesheet" type="text/css" href="./tachyons.min.css"/>
+  </head>
+  <body class='container sans-serif'>
+    <section class="ph3 ph5-ns pv5">
+      <article class="mw8 center br2 ba b--light-blue bg-lightest-blue">
+        <div class="dt-ns dt--fixed-ns w-100">
+          <div class="pa3 pa4-ns dtc-ns v-mid">
+            <div>
+              <h3\ class="fw4 blue mt0 mb3">This button will remove the printer queue</h3\>
+              <p class="black-70 measure lh-copy mv0">
+                Use this button when the printer is out of sync.
+              </p>
+            </div>
+          </div>
+          <div class="pa3 pa4-ns dtc-ns v-mid">
+            <form action='reset_printer' method='post'>
+              <button type='submit' class='no-underline f6 tc db w-100 pv3 bg-animate bg-blue hover-bg-dark-blue white br2'>Reset Printer</button>
+            </form>
+          </div>
+        </div>
+      </article>
+    </section>
+  </body>
+</html>
