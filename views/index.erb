@@ -1,3 +1,7 @@
+<% zone_1_url = 'http://10.16.4.3:9001' %>
+<% zone_2_url = 'http://10.16.4.3:9002' %>
+<% zone_3_url = 'http://10.16.4.3:9003' %>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -25,5 +29,17 @@
         </div>
       </article>
     </section>
+    <div class="flex items-center justify-center flex-column">
+      <div class='cf dib'>
+        <p class="m0 f6 silver tc">Link to Logs</p>
+        <a class="f4 fl hover-bg-blue hover-white b--blue link ba ph3 pv2 dib blue ma1" target="_blank" href="<%= zone_1_url %>">Zone 1</a>
+        <a class="f4 fl hover-bg-blue hover-white b--blue link ba ph3 pv2 dib blue ma1" target="_blank" href="<%= zone_2_url %>">Zone 2</a>
+        <a class="f4 fl hover-bg-blue hover-white b--blue link ba ph3 pv2 dib blue ma1" target="_blank" href="<%= zone_3_url %>">Zone 3</a>
+      </div>
+    </div>
+
+    <iframe src='<%= zone_1_url %>' frameborder="0" class="w-100 vh-25"></iframe>
+    <iframe src='<%= zone_2_url %>' frameborder="0" class="w-100 vh-25"></iframe>
+    <iframe src='<%= zone_3_url %>' frameborder="0" class="w-100 vh-25"></iframe>
   </body>
 </html>
